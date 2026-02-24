@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Karate Journey — A Story of Transformation</title>
+  <meta name="description"
+    content="A cinematic personal storytelling presentation about a transformative karate journey — from struggle to greatness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Preparing Your Story...</p>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar">
+    <div id="progress-fill"></div>
+  </div>
+
+  <!-- Slide Counter -->
+  <div id="slide-counter">
+    <span id="current-slide-num">01</span>
+    <span class="counter-divider">/</span>
+    <span id="total-slides">10</span>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button id="nav-prev" class="nav-arrow" aria-label="Previous slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button id="nav-next" class="nav-arrow" aria-label="Next slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Slide Dots -->
+  <div id="slide-dots"></div>
+
+  <!-- ==================== SLIDES ==================== -->
+  <div id="presentation">
+
+    <!-- SLIDE 1: Powerful Emotional Hook — FUSION DESIGN -->
+    <section class="slide active slide-fusion" data-slide="1" data-theme="crimson">
+
+      <!-- LEFT HALF: Engineering World -->
+      <div class="fusion-half fusion-half-left">
+        <div class="fusion-bg-img"
+          style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80')">
+        </div>
+        <div class="fusion-half-overlay fusion-overlay-eng"></div>
+        <div class="fusion-half-content">
+          <img src="images/faculty.png" alt="Faculty of Engineering — Ain Shams University" class="fusion-logo">
+          <!-- <span class="fusion-label"><i class="fa-solid fa-microchip"></i> THE ENGINEER</span> -->
+        </div>
+      </div>
+
+      <!-- RIGHT HALF: Karate World -->
+      <div class="fusion-half fusion-half-right">
+        <img src="images/personal-slide1-hook.jpg" alt="Karate fighter in powerful stance" class="fusion-karate-img"
+          loading="eager">
+        <div class="fusion-half-overlay fusion-overlay-karate"></div>
+        <div class="fusion-half-content">
+          <!-- <span class="fusion-label"><i class="fa-solid fa-hand-fist"></i> THE FIGHTER</span> -->
+        </div>
+      </div>
+
+      <!-- CENTER: Fusion Energy Collision -->
+      <div class="fusion-collision">
+        <div class="fusion-line"></div>
+        <div class="fusion-energy-ring"></div>
+        <div class="fusion-energy-ring fusion-energy-ring-2"></div>
+        <div class="fusion-sparks">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Centered tag -->
+      <div class="fusion-center-tag animate-item">
+        <p class="slide-tag">THE DUAL LIFE</p>
+      </div>
+      <!-- PER-HALF bottom text — mirrored positioning -->
+      <div class="fusion-half-text fusion-half-text-left animate-item">
+        <h1 class="slide-title">Two Worlds</h1>
+      </div>
+      <div class="fusion-half-text fusion-half-text-right animate-item">
+        <h1 class="slide-title"><span class="text-gold">One Mindset</span></h1>
+      </div>
+      <!-- Shared subtitle at the very bottom -->
+      <!-- <div class="fusion-bottom-subtitle animate-item">
+        <p class="slide-subtitle">Engineering the mind. Forging the body</p>
+      </div> -->
+
+    </section>
+
+    <!-- SLIDE 2: Who I Was Before Karate -->
+    <!-- Landscape: Childhood competition on blue/red mat — full background OK -->
+    <section class="slide slide-full" data-slide="2" data-theme="ocean">
+      <div class="slide-bg" style="background-image: url('images/personal-slide2-childhood.jpg')"></div>
+      <div class="slide-overlay overlay-bottom"></div>
+      <div class="slide-content content-bottom-left">
+        <p class="slide-tag animate-item">THE EXPECTATION</p>
+        <h1 class="slide-title animate-item">
+          Academic Pressure.<br>
+          <span class="text-gold">Future Anxiety.</span>
+        </h1>
+        <ul class="slide-list animate-item">
+          <li>Growing up in Egypt: study hard, get the grade.</li>
+          <li>Family expectations running high.</li>
+          <li>The heavy weight of future career competition.</li>
+          <li>Searching for an outlet for the stress.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: Why Karate Changed My Life -->
+    <!-- Portrait: Competition match in arena — photo LEFT, text RIGHT -->
+    <section class="slide slide-split" data-slide="3" data-theme="steel">
+      <div class="split-photo photo-left">
+        <img src="images/personal-slide8-identity.jpg" alt="Walking onto the competition mat" loading="lazy">
+        <div class="photo-fade fade-right"></div>
+      </div>
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">THE DECISION</p>
+          <h1 class="slide-title animate-item">
+            I asked myself:<br>
+            <span class="text-gold">Why not me?</span>
+          </h1>
+          <p class="slide-body animate-item">
+            I stepped on the mat.<br>
+            I found my balance.
+            <br>
+            Karate didn't just become a sport —<br>
+            <strong>it became my anchor.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: The Struggle Phase -->
+    <!-- Portrait: High kick, red/maroon studio — photo RIGHT, text LEFT -->
+    <section class="slide slide-split" data-slide="4" data-theme="crimson">
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">THE CONFLICT</p>
+          <h1 class="slide-title animate-item">
+            The Fight<br>
+            <span class="text-gold">Outside the Ring.</span>
+          </h1>
+          <ul class="slide-list animate-item">
+            <li>Studying at 2 AM with a bruised body.</li>
+            <li>Missing social life to maintain discipline.</li>
+            <li>The mental exhaustion of exams during championships.</li>
+            <li>Constantly torn between competition and grades.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-photo photo-right">
+        <img src="images/cinematic-slide4-conflict.png"
+          alt="A tired student studying late at night with a karate black belt" loading="lazy">
+        <div class="photo-fade fade-left"></div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: The Biggest Challenge -->
+    <!-- Portrait: Arena stance, blue/orange — photo LEFT, text RIGHT -->
+    <section class="slide slide-split" data-slide="5" data-theme="steel">
+      <div class="split-photo photo-left">
+        <img id="work-img" src="images/work.jpeg" alt="Fighting stance in arena" loading="lazy">
+        <div class="photo-fade fade-right"></div>
+      </div>
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">THE BREAKING POINT</p>
+          <h1 class="slide-title animate-item">
+            I Almost<br>
+            <span class="text-red">Broke Down.</span>
+          </h1>
+          <p class="slide-body animate-item">
+            Mental overload. Fear of failing both.<br>
+            The burnout when the world demanded perfection.<br>
+            Self-doubt crept in: "Can I really do this?"<br>
+            <strong>But I refused to choose just one.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Breakthrough Moment -->
+    <!-- Portrait: Studio kick, red/maroon — photo RIGHT, text LEFT -->
+    <section class="slide slide-split" data-slide="6" data-theme="crimson">
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">THE SHIFT</p>
+          <h1 class="slide-title animate-item">
+            I Found Balance.<br>
+            <span class="text-gold">I Optimized.</span>
+          </h1>
+          <p class="slide-body animate-item">
+            At some point, everything changed.<br>
+            The discipline from training started showing up in my studies.<br>
+            The structure from engineering helped me train smarter.<br>
+            <strong>They weren't competing — they were feeding each other.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="split-photo photo-right">
+        <img src="images/grad.jpeg" alt="Karate fighter surrounded by glowing engineering blueprints" loading="lazy">
+        <div class="photo-fade fade-left"></div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: Success & Achievements -->
+    <!-- Portrait: Al Ahly medal poster, red/gold — photo LEFT, text RIGHT -->
+    <section class="slide slide-split" data-slide="7" data-theme="alahly">
+      <div class="split-photo photo-left">
+        <img src="images/personal-slide7-medal.jpg" alt="Al Ahly medal celebration" loading="lazy">
+        <div class="photo-fade fade-right"></div>
+      </div>
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">REAL OUTCOMES</p>
+          <h1 class="slide-title animate-item">
+            From Medals To<br>
+            <span class="text-gold">Mindset.</span>
+          </h1>
+          <div class="achievement-grid animate-item">
+            <div class="achievement">
+              <span class="achievement-icon" style="color: var(--gold);"><i
+                  class="fa-solid fa-graduation-cap"></i></span>
+              <span class="achievement-text">Engineering degree, full-time athlete</span>
+            </div>
+            <div class="achievement">
+              <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-trophy"></i></span>
+              <span class="achievement-text">National Champion, one fight at a time</span>
+            </div>
+            <div class="achievement">
+              <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-brain"></i></span>
+              <span class="achievement-text">Problem solver — mat or whiteboard</span>
+            </div>
+            <div class="achievement">
+              <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-fire"></i></span>
+              <span class="achievement-text">Showed up on the hardest days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: Lessons Karate Taught Me -->
+    <!-- Portrait: Gold medal, blue glass building — photo LEFT, text RIGHT -->
+    <section class="slide slide-split" data-slide="8" data-theme="navy">
+      <div class="split-photo photo-left">
+        <img id="ora-img" src="images/me/ora.jpeg" alt="Playing ora mawashi" loading="lazy">
+        <div class="photo-fade fade-right"></div>
+      </div>
+      <div class="split-text">
+        <div class="split-text-inner">
+          <p class="slide-tag animate-item">WHAT KARATE GAVE ME</p>
+          <h1 class="slide-title animate-item">
+            Beyond<br>
+            <span class="text-gold">The Belt.</span>
+          </h1>
+          <div class="lessons-grid animate-item">
+            <div class="lesson-card">
+              <span class="lesson-word">Determination</span>
+              <span class="lesson-desc">Never stop until you get there.</span>
+            </div>
+            <div class="lesson-card">
+              <span class="lesson-word">Discipline</span>
+              <span class="lesson-desc">Do what's needed, not what's easy.</span>
+            </div>
+            <div class="lesson-card">
+              <span class="lesson-word">Confidence</span>
+              <span class="lesson-desc">Built through every fight I survived.</span>
+            </div>
+            <div class="lesson-card">
+              <span class="lesson-word">Character</span>
+              <span class="lesson-desc">The mat shaped who I am today.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: Faith & Preparation — Video -->
+    <!-- Personal video about relying on Allah -->
+    <section class="slide slide-full slide-video-centered" data-slide="9" data-theme="faith">
+      <div class="slide-bg" style="background-image: url('images/cinematic-ending-oss.png')"></div>
+      <div class="slide-overlay overlay-faith"></div>
+      <div class="slide-content content-center" style="position: relative; z-index: 2;">
+        <p class="slide-tag animate-item">إيمان · FAITH</p>
+        <h1 class="slide-title animate-item">
+          How Do I Prepare?<br>
+          <span class="text-green">I Rely On Allah.</span>
+        </h1>
+
+        <div class="video-container animate-item">
+          <p class="video-label"><i class="fa-solid fa-clapperboard"></i> Watch My Message</p>
+          <div class="video-wrapper">
+            <video id="personal-video" controls preload="metadata">
+              <source src="images/personal-slide10-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: Thank You -->
+    <section class="slide slide-split" data-slide="10" data-theme="ending">
+      <div class="split-photo photo-left" style="flex: 0 0 50%;">
+        <img src="images/eyes.jpeg" alt="Karate closing bow" loading="lazy"
+          style="object-position: center; border-right: 2px solid rgba(212, 168, 67, 0.3);">
+        <div class="photo-fade fade-right"></div>
+      </div>
+      <div class="split-text" style="flex: 1; align-items: center; justify-content: center; text-align: center;">
+        <div class="split-text-inner" style="max-width: 550px;">
+          <p class="slide-tag animate-item">THE END</p>
+          <h1 class="slide-title animate-item" style="font-size: clamp(2.8rem, 5.5vw, 4.5rem); margin-bottom: 1.2rem;">
+            Thank You<span class="text-gold">.</span>
+          </h1>
+          <p class="slide-quote animate-item"
+            style="font-size: clamp(1rem, 1.6vw, 1.2rem); color: var(--text-secondary); margin-bottom: 2rem; font-style: italic; font-weight: 300; line-height: 1.8;">
+            "A black belt is a white belt<br>
+            who never gave up."
+          </p>
+          <div class="animate-item" style="display: flex; align-items: center; justify-content: center; gap: 0.8rem;">
+            <span style="font-size: 1.6rem; font-weight: 800; color: var(--gold); letter-spacing: 0.2em;">OSS!</span>
+            <span style="font-size: 1.2rem; color: var(--gold);"><i class="fa-solid fa-hand-fist"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Keyboard Hint -->
+  <div id="keyboard-hint">
+    <span>←</span> <span>→</span> Navigate &nbsp;|&nbsp; <span>F</span> Fullscreen
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
