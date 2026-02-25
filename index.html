@@ -35,7 +35,7 @@
   <div id="slide-counter">
     <span id="current-slide-num">01</span>
     <span class="counter-divider">/</span>
-    <span id="total-slides">10</span>
+    <span id="total-slides">9</span>
   </div>
 
   <!-- Navigation Arrows -->
@@ -134,7 +134,8 @@
     <!-- Portrait: Competition match in arena — photo LEFT, text RIGHT -->
     <section class="slide slide-split" data-slide="3" data-theme="steel">
       <div class="split-photo photo-left">
-        <img src="images/personal-slide8-identity.jpg" alt="Walking onto the competition mat" loading="lazy">
+        <img id="identity-img" src="images/personal-slide8-identity.jpg" alt="Walking onto the competition mat"
+          loading="lazy">
         <div class="photo-fade fade-right"></div>
       </div>
       <div class="split-text">
@@ -174,7 +175,7 @@
         </div>
       </div>
       <div class="split-photo photo-right">
-        <img src="images/cinematic-slide4-conflict.png"
+        <img id="conflict-img" src="images/cinematic-slide4-conflict.png"
           alt="A tired student studying late at night with a karate black belt" loading="lazy">
         <div class="photo-fade fade-left"></div>
       </div>
@@ -223,7 +224,8 @@
         </div>
       </div>
       <div class="split-photo photo-right">
-        <img src="images/grad.jpeg" alt="Karate fighter surrounded by glowing engineering blueprints" loading="lazy">
+        <img id="grad-img" src="images/personal-slide7-medal.jpg"
+          alt="Karate fighter surrounded by glowing engineering blueprints" loading="lazy">
         <div class="photo-fade fade-left"></div>
       </div>
     </section>
@@ -232,7 +234,7 @@
     <!-- Portrait: Al Ahly medal poster, red/gold — photo LEFT, text RIGHT -->
     <section class="slide slide-split" data-slide="7" data-theme="alahly">
       <div class="split-photo photo-left">
-        <img src="images/personal-slide7-medal.jpg" alt="Al Ahly medal celebration" loading="lazy">
+        <img id="medal-img" src="images/grad.jpeg" alt="Al Ahly medal celebration" loading="lazy">
         <div class="photo-fade fade-right"></div>
       </div>
       <div class="split-text">
@@ -252,34 +254,8 @@
               <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-trophy"></i></span>
               <span class="achievement-text">National Champion, one fight at a time</span>
             </div>
-            <div class="achievement">
-              <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-brain"></i></span>
-              <span class="achievement-text">Problem solver — mat or whiteboard</span>
-            </div>
-            <div class="achievement">
-              <span class="achievement-icon" style="color: var(--gold);"><i class="fa-solid fa-fire"></i></span>
-              <span class="achievement-text">Showed up on the hardest days</span>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 8: Lessons Karate Taught Me -->
-    <!-- Portrait: Gold medal, blue glass building — photo LEFT, text RIGHT -->
-    <section class="slide slide-split" data-slide="8" data-theme="navy">
-      <div class="split-photo photo-left">
-        <img id="ora-img" src="images/me/ora.jpeg" alt="Playing ora mawashi" loading="lazy">
-        <div class="photo-fade fade-right"></div>
-      </div>
-      <div class="split-text">
-        <div class="split-text-inner">
-          <p class="slide-tag animate-item">WHAT KARATE GAVE ME</p>
-          <h1 class="slide-title animate-item">
-            Beyond<br>
-            <span class="text-gold">The Belt.</span>
-          </h1>
-          <div class="lessons-grid animate-item">
+          <div class="lessons-grid animate-item" style="margin-top: 1rem;">
             <div class="lesson-card">
               <span class="lesson-word">Determination</span>
               <span class="lesson-desc">Never stop until you get there.</span>
@@ -301,9 +277,9 @@
       </div>
     </section>
 
-    <!-- SLIDE 9: Faith & Preparation — Video -->
+    <!-- SLIDE 8: Faith & Preparation — Video -->
     <!-- Personal video about relying on Allah -->
-    <section class="slide slide-full slide-video-centered" data-slide="9" data-theme="faith">
+    <section class="slide slide-full slide-video-centered" data-slide="8" data-theme="faith">
       <div class="slide-bg" style="background-image: url('images/cinematic-ending-oss.png')"></div>
       <div class="slide-overlay overlay-faith"></div>
       <div class="slide-content content-center" style="position: relative; z-index: 2;">
@@ -325,8 +301,8 @@
       </div>
     </section>
 
-    <!-- SLIDE 10: Thank You -->
-    <section class="slide slide-split" data-slide="10" data-theme="ending">
+    <!-- SLIDE 9: Thank You -->
+    <section class="slide slide-split" data-slide="9" data-theme="ending">
       <div class="split-photo photo-left" style="flex: 0 0 50%;">
         <img src="images/eyes.jpeg" alt="Karate closing bow" loading="lazy"
           style="object-position: center; border-right: 2px solid rgba(212, 168, 67, 0.3);">
